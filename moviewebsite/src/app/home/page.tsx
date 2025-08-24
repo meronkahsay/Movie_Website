@@ -7,9 +7,13 @@ import NavBar from '../sharedcomponent/NavBar';
 const HomePage: React.FC = () => {
   const { latestMovies, latestSeries, searchResults, loading, error, searchMovies } = useMovieFetch();
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [favorites, setFavorites] = useState<Movie[]>(() =>
-    JSON.parse(localStorage.getItem('favorites') || '[]')
-  );
+ const [favorites, setFavorites] = useState<Movie[]>([]);
+useEffect(() => {
+  if (typeof window !== 'undefined') {
+    const storedFavorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+    setFavorites(storedFavorites);
+  }
+}, []);
   const [showFavorites, setShowFavorites] = useState(false);
 
 
