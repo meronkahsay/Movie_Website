@@ -1,7 +1,10 @@
 import React from 'react'
 import Button from '../Button'
 import { FaApple } from 'react-icons/fa6'
+import { FaWhatsapp } from 'react-icons/fa6'
 import { FaFacebookF } from 'react-icons/fa6'
+import { FaInstagram } from 'react-icons/fa6'
+import { FaGooglePlay} from 'react-icons/fa6'
 
 const Footer= () => {
   return (
@@ -16,8 +19,8 @@ const Footer= () => {
 <Button text="" onClick={()=>{}} variant='outlined' classname=' w-45 rounded-4xl text-xs flex gap-3 bg-gray-300 h-15 text-black'>
     <FaApple className='text-4xl'></FaApple> <div>Download on the <p className='text-xl'>App Store</p></div>
 </Button>
-<Button text="" onClick={()=>{}} variant='outlined' classname='w-45 rounded-4xl text-xs  flex gap-3 bg-gray-300 h-15 text-black'>
-    <FaApple className='text-4xl'></FaApple> <div>Download on the <p className='text-xl'>App Store</p></div>
+<Button text="" onClick={()=>{}} variant='outlined' classname='w-45 rounded-4xl text-xs  flex gap-1 bg-gray-300 h-15 text-black'>
+    <FaGooglePlay className='text-4xl'></FaGooglePlay> <div>Get it on  <p className='text-xl'>Google play</p></div>
 </Button>
 
 </div>
@@ -42,11 +45,11 @@ const Footer= () => {
                 <h1 className='text-xl font-bold'>Contact Us:</h1>
                 <p>support@egymovies.com</p>
                 <p>Tel: +201045963322</p>
-                <p>OR By Using:</p>
+                <p className='mb-6'>OR By Using:</p>
 
-                <FaFacebookF className='border p-1 rounded-2xl text-3xl inline mr-3'/>
-                                <FaFacebookF className='border p-1 rounded-2xl text-3xl inline mr-3'/>
-                                                <FaFacebookF className='border p-1 rounded-2xl text-3xl inline mr-3'/>
+                <FaFacebookF className='border p-1 rounded-2xl text-3xl inline mr-5'/>
+                                                                <FaInstagram className='border p-1 rounded-2xl text-3xl inline mr-5'/>
+                                <FaWhatsapp className='border p-1 rounded-2xl text-3xl inline mr-5'/>
 
             </div>
                         <div>
@@ -58,7 +61,7 @@ const Footer= () => {
                 <FaFacebookF className='border p-1 rounded-2xl text-3xl inline mr-3'/> Facebook
 </div>
 <div>
-                <FaFacebookF className='border p-1 rounded-2xl text-3xl inline mr-3'/> Facebook
+                <FaInstagram className='border p-1 rounded-2xl text-3xl inline mr-3'/> Instagram
             </div>
               </div>
                 
